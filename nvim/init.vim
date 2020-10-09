@@ -6,7 +6,7 @@ call plug#begin('~/.vim/plugged')
 " github: https://github.com/preservim/nerdtree
 " Plug ‘scrooloose/nerdtree’ is the same
 Plug 'scrooloose/nerdtree'
-" autocmd vimenter * NERDTree
+autocmd vimenter * NERDTree
 
 " coc.nvim
 " https://vimawesome.com/plugin/coc-nvim
@@ -182,6 +182,10 @@ Plug 'tomasr/molokai'
 "
 Plug 'ctrlpvim/ctrlp.vim'
 "
+"===
+"
+"注释
+Plug 'preservim/nerdcommenter'
 call plug#end()
 
 " --------------------------------------------------------
