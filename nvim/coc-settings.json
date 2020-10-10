@@ -1,14 +1,19 @@
 {
     "languageserver": {
-        "go": {
+        "golang": {
             "command": "gopls",
             "filetypes": [
                 "go"
             ],
+            "initializationOptions": {
+                "usePlaceholders": true
+            },
             "rootPatterns": [
-                "go.mod"
-            ],
-            "trace.server": "verbose"
+                "go.mod",
+                ".vim/",
+                ".git/",
+                ".hg/"
+            ]
         }
     }
 }

@@ -14,7 +14,7 @@ autocmd vimenter * NERDTree
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " ---golang---
-autocmd BufWritePre *.go :call CocAction('runCommand', 'editor.action.organizeImport')
+" autocmd BufWritePre *.go :call CocAction('runCommand', 'editor.action.organizeImport')
 "
 
 " ================================vim-go.vim========================================
@@ -96,25 +96,6 @@ set updatetime=100
 
 " auto highlight identifier
 let g:go_auto_sameids = 1
-
-let s:packages = [
-      \ "github.com/nsf/gocode",
-      \ "github.com/alecthomas/gometalinter",
-      \ "golang.org/x/tools/cmd/goimports",
-      \ "golang.org/x/tools/cmd/guru",
-      \ "golang.org/x/tools/cmd/gorename",
-      \ "github.com/golang/lint/golint",
-      \ "github.com/rogpeppe/godef",
-      \ "github.com/kisielk/errcheck",
-      \ "github.com/jstemmer/gotags",
-      \ "github.com/klauspost/asmfmt/cmd/asmfmt",
-      \ "github.com/fatih/motion",
-      \ "github.com/fatih/gomodifytags",
-      \ "github.com/zmb3/gogetdoc",
-      \ "github.com/josharian/impl",
-      \ "github.com/dominikh/go-tools/cmd/keyify",
-      \ ]
-
 " ================================surround.vim========================================
 " surround.vim
 " https://vimawesome.com/plugin/surround-vim
@@ -186,6 +167,10 @@ Plug 'ctrlpvim/ctrlp.vim'
 "
 "注释
 Plug 'preservim/nerdcommenter'
+
+"====
+" vim-jsonc add comment to json file
+Plug 'kevinoid/vim-jsonc'
 call plug#end()
 
 " --------------------------------------------------------
